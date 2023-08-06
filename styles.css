@@ -1,0 +1,158 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Gilroy';
+}
+html, body{
+height:100%;
+width:100%;
+}
+.main{
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.nav{
+	height:100px;
+	width:100%;
+	/*background-color:red;*/
+	
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0 5vw;
+}
+.nav-part2{
+	display:flex;
+	/*background-color:blue;*/
+	align-item:center;
+	gap:3vw;
+}
+.nav h2{
+	font-size:2vw;
+	font-weight:700;
+	
+}
+.nav h4{
+	font-size:1.4vw;
+	margin-top:5px;
+	
+}
+.nav button{
+	font-size:1vw;
+	padding:0.7vw 1.4vw;
+	background-color:#616BF1;
+	color:#fff;
+	border:none;
+	border-radius:5px;
+	font-width:600;
+	margin-top:-2px;
+   
+}
+.nav i{
+	font-size:800;
+	display:none;
+}
+.content{
+	height:calc(100% - 100px);
+	width:100%;
+	position:relatives;
+	display:flex;
+}
+.left{
+	height:100%;
+	width:55%;
+	padding:5vw 5vw;
+	}
+.left h1{
+	font-size:4.2vw;
+	line-height:4.4vw;
+	
+}
+.left h1 span{
+	color:#FF8578;
+}
+.left p{
+	font-size:1.2vw;
+	font-width:600;
+	color:#666;
+	width:80%;
+	margin-top:1.4vw;
+	margin-bottom:3vw;
+}
+.content button{
+	font-size:1.2vw;
+	padding:1.1vw 2.1vw;
+	background-color:#FF8578;
+	color:#fff;
+	border:none;
+	border-radius:5px;
+	font-width:700;
+}
+.right{
+	height:100%;
+	width:45%;
+
+}	
+.right img{
+	height:100%;
+	width:100%;
+}
+
+
+
+
+
+
+@media (max-width:600px){
+	.nav{
+		padding:0 5vw;
+		height:60px;
+	}
+	.nav h2{
+		font-size:6vw;
+	}
+	
+	.nav h4{
+		font-size:4vw;
+		display:none;
+	}
+	.nav button{
+		display:none;
+	}
+	.nav i{
+		display:block;
+		font-size:6vw ;
+	}
+	.content{
+		height:calc(100% - 60px);
+		flex-direction:column;
+	}
+	.left{
+		height:50%;
+		width:100%;
+		padding:4vw 6vw;
+	}
+	.right{
+		height:50%;
+	width:100%;
+	}
+	.left h1{
+		font-size:12vw;
+		line-height:11vw;
+	}
+	.left p{
+		font-size:4vw;
+		width:100%;
+		margin-top:5vw;
+		margin-bottom:6vw;
+	}
+	.content button{
+		padding:1.8vw 2.5vw;
+		border-radius:5px;
+		font-size:3vw;
+		font-width:600;
+		
+	}
+}
